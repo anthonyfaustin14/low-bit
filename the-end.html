@@ -40,7 +40,7 @@
         },
         { 
           selector: '.text-wrapper-4', // "Press E..." - Appears above "Press R..." in layout
-          text: "Press E to go back to Main Menu...", 
+          text: "Press E to go back to Main Menu...", // You might want to update this display text if E now goes to index.html
           speed: 80, 
           addCursor: false 
         },
@@ -53,7 +53,7 @@
       ];
 
       const navigationConfig = {
-        KeyE: 'main-menu.html', 
+        KeyE: 'index.html',  // UPDATED from 'main-menu.html'
         KeyR: 'scene-1.html'   
       };
       
@@ -63,7 +63,7 @@
       // --- CORE TYPEWRITER SCRIPT ---
       function typewriterEffect(element, text, speed, callback) {
         let i = 0;
-        element.innerHTML = ''; // Clear element before typing this specific text
+        element.innerHTML = ''; 
         
         function type() {
           if (i < text.length) {
@@ -83,7 +83,6 @@
           const element = document.querySelector(job.selector);
 
           if (element) {
-            // Remove cursor from previous element if any
             if (index > 0 && jobs[index-1].addCursor) {
               const prevElement = document.querySelector(jobs[index-1].selector);
               if (prevElement) prevElement.classList.remove('typing-cursor');
@@ -102,19 +101,17 @@
         } else {
           allTypingComplete = true;
           console.log("All typewriter effects complete. Keyboard navigation active.");
-       
         }
       }
 
-   
       document.addEventListener('keydown', function(event) {
         if (!allTypingComplete) {
-         
           return; 
         }
 
         if (event.code === 'KeyE') {
-          console.log("E key pressed - Navigating to Main Menu");
+          // UPDATED console log message for clarity
+          console.log("E key pressed - Navigating to index.html"); 
           window.location.href = navigationConfig.KeyE; 
         } else if (event.code === 'KeyR') {
           console.log("R key pressed - Navigating to Scene 1");
@@ -122,9 +119,7 @@
         }
       });
 
-      // Start typing when the page loads
       window.addEventListener('load', () => {
-        // Clear initial content from HTML before typing begins
         typingJobs.forEach(job => {
           const el = document.querySelector(job.selector);
           if (el) el.innerHTML = '';
