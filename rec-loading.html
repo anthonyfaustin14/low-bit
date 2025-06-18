@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>The Rec Room NYC</title>
     <style>
-      /* Basic blinking cursor effect */
+      /* blinking cursor effect */
       .intro-instruction.typing-cursor::after {
         content: '|';
         display: inline-block;
@@ -62,9 +62,9 @@
         type();
       }
 
-      // Start the typing sequence
+      
       function startTyping() {
-        // Clear existing static text once at the beginning
+        
         titleElement.innerHTML = '';
         instructionElement.innerHTML = '';
 
@@ -86,8 +86,8 @@
         if (event.code === "Space") {
           event.preventDefault(); 
           if (allowSpacebarNav) { 
-            console.log("Space bar pressed, navigating to scene-1.html");
-            window.location.href = "scene-1.html";
+            console.log("Space bar pressed, navigating to rec-room-intro.html");
+            window.location.href = "rec-room-intro.html";
           } else {
             console.log("Space bar pressed, but typing not complete or navigation not yet allowed.");
           }

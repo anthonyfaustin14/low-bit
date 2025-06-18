@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/globals-batch-4.css" /> <link rel="stylesheet" href="css/styleguide-batch-4.css" />
     <link rel="stylesheet" href="css/the-end.css" />
     <style>
-      /* Basic blinking cursor effect */
+      /* blinking cursor effect */
       .typing-cursor::after {
         content: '|';
         display: inline-block;
@@ -30,7 +30,7 @@
     </div>
 
     <script>
-      // --- START: PAGE-SPECIFIC TYPEWRITER CONFIGURATION ---
+      // --- START: TYPEWRITER CONFIGURATION ---
       const typingJobs = [
         { 
           selector: '.text-wrapper-3', 
@@ -39,27 +39,27 @@
           addCursor: false 
         },
         { 
-          selector: '.text-wrapper-4', // "Press E..." - Appears above "Press R..." in layout
-          text: "Press E to go back to Main Menu...", // You might want to update this display text if E now goes to index.html
+          selector: '.text-wrapper-4', 
+          text: "Press E to go back to Main Menu...", 
           speed: 80, 
           addCursor: false 
         },
         { 
-          selector: '.p', // "Press R..."
+          selector: '.p', 
           text: "Press R to Restart History...", 
           speed: 80, 
-          addCursor: true // Add cursor to the last typed message
+          addCursor: true 
         }
       ];
-
+    
       const navigationConfig = {
-        KeyE: 'index.html',  // UPDATED from 'main-menu.html'
-        KeyR: 'scene-1.html'   
+        KeyE: 'index.html',  
+        KeyR: 'rec-loading.html'  // UPDATED here
       };
       
       let allTypingComplete = false;
-      // --- END: PAGE-SPECIFIC TYPEWRITER CONFIGURATION ---
-
+      // --- END: TYPEWRITER CONFIGURATION ---
+    
       // --- CORE TYPEWRITER SCRIPT ---
       function typewriterEffect(element, text, speed, callback) {
         let i = 0;
@@ -76,18 +76,18 @@
         }
         type();
       }
-
+    
       function processTypingJobs(jobs, index = 0) {
         if (index < jobs.length) {
           const job = jobs[index];
           const element = document.querySelector(job.selector);
-
+    
           if (element) {
             if (index > 0 && jobs[index-1].addCursor) {
               const prevElement = document.querySelector(jobs[index-1].selector);
               if (prevElement) prevElement.classList.remove('typing-cursor');
             }
-
+    
             typewriterEffect(element, job.text, job.speed, () => {
               if (job.addCursor) {
                 element.classList.add('typing-cursor');
@@ -103,22 +103,21 @@
           console.log("All typewriter effects complete. Keyboard navigation active.");
         }
       }
-
+    
       document.addEventListener('keydown', function(event) {
         if (!allTypingComplete) {
           return; 
         }
-
+    
         if (event.code === 'KeyE') {
-          // UPDATED console log message for clarity
           console.log("E key pressed - Navigating to index.html"); 
           window.location.href = navigationConfig.KeyE; 
         } else if (event.code === 'KeyR') {
-          console.log("R key pressed - Navigating to Scene 1");
+          console.log("R key pressed - Navigating to rec-loading.html");  // UPDATED console message
           window.location.href = navigationConfig.KeyR;
         }
       });
-
+    
       window.addEventListener('load', () => {
         typingJobs.forEach(job => {
           const el = document.querySelector(job.selector);
@@ -128,5 +127,6 @@
       });
       // --- END: CORE TYPEWRITER SCRIPT ---
     </script>
+    
   </body>
 </html>

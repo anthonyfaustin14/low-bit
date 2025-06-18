@@ -9,6 +9,51 @@
     <title>The Dream Weaver</title>
     <style>
       .next-arrow {
+    position: absolute;
+    top: 957px;  
+    left: 1263px; 
+    width: 49px;  
+    height: 48px;
+    font-family: 'Pixel Georgia', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    color: #969696; 
+    text-decoration: none;
+    z-index: 999;
+    cursor: pointer;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .next-arrow:hover {
+    opacity: 0.7;
+  }
+
+  /* === FLOATING GLITCH GHOST EFFECT FOR FINAL CISERO === */
+  .cisero {
+    animation: floatUpDown 4s ease-in-out infinite,
+               glitchyPulse 2.5s ease-in-out infinite;
+    position: absolute;
+    z-index: 1001;
+  }
+
+  @keyframes floatUpDown {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+
+  @keyframes glitchyPulse {
+    0%   { filter: drop-shadow(2px 2px #81af4f) drop-shadow(-2px -2px #4d357ba6); }
+    25%  { filter: drop-shadow(-2px 1px #4d357ba6) drop-shadow(2px -1px #81af4f); }
+    50%  { filter: drop-shadow(2px -2px #81af4f) drop-shadow(-2px 2px #4d357ba6); }
+    75%  { filter: drop-shadow(-1px -2px #4d357ba6) drop-shadow(1px 2px #81af4f); }
+    100% { filter: none; }
+  }
+      .next-arrow {
         position: absolute;
         top: 957px;  
         left: 1263px; 
@@ -50,7 +95,7 @@
             </p>
           </blockquote>
 
-          <a href="dream-weaver-11.html" class="next-arrow" aria-label="Go to next page">&gt;</a>
+          <a href="more-than-words.html" class="next-arrow" aria-label="Go to next page">&gt;</a>
 
           <h2 class="text-wrapper-2">Ghost of Cisero Murphy:</h2>
           <img class="dither-background" src="img/dither-background-2.png" alt="Dithered background" />

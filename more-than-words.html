@@ -22,6 +22,41 @@
       .text-wrapper-13:hover {
         opacity: 0.7;
       }
+      .text-wrapper-13 {
+    font-family: 'Pixel Georgia', sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 48px;  
+    color: #493677;  
+    text-decoration: none;
+    z-index: 999;
+  }
+
+  .text-wrapper-13:hover {
+    opacity: 0.7;
+  }
+
+  /* === FLOATING GLITCH GHOST EFFECT === */
+  .cisero-3 {
+    animation: floatUpDown 4s ease-in-out infinite,
+               glitchyPulse 2.5s ease-in-out infinite;
+    position: absolute;
+    z-index: 1001;
+  }
+
+  @keyframes floatUpDown {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+
+  @keyframes glitchyPulse {
+    0%   { filter: drop-shadow(2px 2px #81af4f) drop-shadow(-2px -2px #4d357ba6); }
+    25%  { filter: drop-shadow(-2px 1px #4d357ba6) drop-shadow(2px -1px #81af4f); }
+    50%  { filter: drop-shadow(2px -2px #81af4f) drop-shadow(-2px 2px #4d357ba6); }
+    75%  { filter: drop-shadow(-1px -2px #4d357ba6) drop-shadow(1px 2px #81af4f); }
+    100% { filter: none; }
+  }
     </style>
   </head>
   <body>
@@ -31,7 +66,7 @@
           <img class="dithered-image-3" src="img/dithered-image-22-1-2.png" />
           <p class="you-ve-given-me-more">You’ve given me more than words, Cisero.  I’ll honor it in every game.</p>
 
-          <a href="dream-weaver-12.html"><div class="text-wrapper-13">&gt;</div></a>
+          <a href="back-to-rec.html"><div class="text-wrapper-13">&gt;</div></a>
 
           <div class="text-wrapper-14">Anthony “Ace”:</div>
           <img class="anthonyace-5" src="img/anthonyace-4.png" />

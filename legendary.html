@@ -11,6 +11,31 @@
       .text-wrapper-13 { 
         cursor: pointer;
       }
+      .text-wrapper-13 {
+    cursor: pointer;
+  }
+
+  /* === FLOATING GLITCH GHOST EFFECT === */
+  .cisero-10 {
+    animation: floatUpDown 4s ease-in-out infinite,
+               glitchyPulse 2.5s ease-in-out infinite;
+    position: absolute;
+    z-index: 1001;
+  }
+
+  @keyframes floatUpDown {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+
+  @keyframes glitchyPulse {
+    0%   { filter: drop-shadow(2px 2px #81af4f) drop-shadow(-2px -2px #4d357ba6); }
+    25%  { filter: drop-shadow(-2px 1px #4d357ba6) drop-shadow(2px -1px #81af4f); }
+    50%  { filter: drop-shadow(2px -2px #81af4f) drop-shadow(-2px 2px #4d357ba6); }
+    75%  { filter: drop-shadow(-1px -2px #4d357ba6) drop-shadow(1px 2px #81af4f); }
+    100% { filter: none; }
+  }
     </style>
   </head>
   <body>
@@ -19,7 +44,7 @@
           <img class="dithered-image-7" src="img/dithered-image-22-1-9.png" />
           <p class="that-s-legendary">That’s legendary!&nbsp;&nbsp;Must’ve been rough back then.</p>
 
-          <a href="dream-weaver-8.html"><div class="text-wrapper-13">&gt;</div></a>
+          <a href="broke-the-barrier.html"><div class="text-wrapper-13">&gt;</div></a>
 
           <div class="text-wrapper-14">Anthony “Ace”:</div>
           <img class="anthonyace-9" src="img/anthonyace-12.png" />

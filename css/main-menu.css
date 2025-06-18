@@ -1,4 +1,4 @@
-/* css/main-menu.css */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
 .main-menu {
   background-color: #fffbeb;
@@ -19,68 +19,65 @@
   width: 1439px;
   height: 918px;
   top: 60px;
-  background-image: url(./img/screen-frame.png); /* Path relative to this CSS file */
+  background-image: url(./img/screen-frame.png);
   background-size: cover;
   background-position: 50% 50%;
 }
 
-.main-menu .title { /* "low-bit legacies" */
+.main-menu .title {
   position: absolute;
-  width: 924px; 
-  top: 124px;   
-  left: 50%;    
-  transform: translateX(-50%); 
-  font-family: 'Kiwi Soda', sans-serif; /* Using Kiwi Soda */
-  font-weight: 500; /* Adjust if needed for Kiwi Soda font file */
+  width: 924px;
+  top: 124px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Kiwi Soda', sans-serif;
+  font-weight: 500;
   color: #4d357bad;
   font-size: 140px;
-  text-align: center; 
+  text-align: center;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
 }
 
-/* Wrapper for aligning Jean image and "Enter The Rec Room" link */
 .main-menu .jean-and-link-wrapper {
   position: absolute;
-  top: 430px; /* Adjust for desired vertical position of the group */
+  top: 430px;
   left: 50%;
-  transform: translateX(-50%); /* Centers the wrapper */
+  transform: translateX(-50%);
   display: flex;
-  align-items: center; 
-  gap: 15px; 
+  align-items: center;
+  gap: 15px;
 }
 
-.main-menu .jean { /* Jean image */
+.main-menu .jean {
   width: 37px;
   height: 57px;
   object-fit: cover;
-  /* No absolute positioning needed here; positioned by flex wrapper */
 }
 
-.main-menu .enter-rec-room-link { /* The <a> tag */
-  text-decoration: none; 
+.main-menu .enter-rec-room-link {
+  text-decoration: none;
 }
 
-.main-menu .text-wrapper { /* "Enter The Rec Room" text div inside the link */
-  font-family: 'Pixel Georgia', sans-serif; 
+.main-menu .text-wrapper {
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
-  font-style: normal; 
+  font-style: normal;
   color: #81af45;
   font-size: 48px;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
-  /* No absolute positioning needed here; positioned by flex wrapper */
 }
 
 .main-menu .quick-play {
   position: absolute;
   top: 542px;
-  left: 608px; /* Keeping original position unless requested to center */
-  font-family: 'Pixel Georgia', sans-serif; /* UPDATED font */
+  left: 608px;
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
-  font-style: normal; /* ADDED for consistency */
+  font-style: normal;
   color: var(--variable-collection-color-2);
   font-size: 48px;
   letter-spacing: 0;
@@ -88,36 +85,34 @@
   white-space: nowrap;
 }
 
-.main-menu .div { /* "exit" text div */
+.main-menu .div {
   position: absolute;
-  top: 743px;   
-  left: 50%;    
-  transform: translateX(-50%); 
-  font-family: 'Pixel Georgia', sans-serif; 
+  top: 743px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
-  font-style: normal; 
+  font-style: normal;
   color: #e06262;
   font-size: 48px;
-  text-align: center; 
+  text-align: center;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
 }
 
-.main-menu .text-wrapper-2 { /* "Settings" text */
+.main-menu .text-wrapper-2 {
   position: absolute;
-  width: 319px; 
+  width: 319px;
   top: 647px;
-  left: 612px;  /* Keeping original position unless requested to center */
-  font-family: 'Pixel Georgia', sans-serif; /* UPDATED font */
+  left: 612px;
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
-  font-style: normal; /* ADDED for consistency */
+  font-style: normal;
   color: var(--variable-collection-color-4);
   font-size: 48px;
   letter-spacing: 0;
   line-height: normal;
-  /* white-space: nowrap; /* Not present in original, add if needed */
-  /* text-align: center; /* Add if this block needs its text centered */
 }
 
 .main-menu .rico {
@@ -141,10 +136,10 @@
 .main-menu .instructions {
   position: absolute;
   top: 339px;
-  left: 244px; /* Keeping original position unless requested to center */
-  font-family: 'Pixel Georgia', sans-serif; /* UPDATED font */
+  left: 244px;
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
-  font-style: normal; /* ADDED for consistency */
+  font-style: normal;
   color: #4d357ba6;
   font-size: 32px;
   letter-spacing: 0;
@@ -152,22 +147,32 @@
   white-space: nowrap;
 }
 
-/* The following .div-wrapper rule was at the end of the CSS you provided.
-  It seems to be for a different page structure (like scene-4.html) 
-  and is likely not needed for main-menu.html, as .main-menu .overlap-group 
-  already has a background image. I am removing it from main-menu.css.
-  If you need this for main-menu.html because you added a .div-wrapper 
-  element there, you can uncomment it and ensure the path is correct.
-
-.div-wrapper {
-  background-color: #fffbeb; 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  background-image: url('../img/screen-frame.png'); 
-  background-size: cover;       
-  background-position: center center; 
-  background-repeat: no-repeat; 
+.enter-rec-room-link .text-wrapper {
+  position: relative;
+  transition: all 0.3s ease-in-out;
 }
-*/
+
+.enter-rec-room-link .text-wrapper:hover {
+  transform: scale(1.05) skewX(-2deg);
+  text-shadow:
+    2px 0 #81af4f,
+    -2px 0 #4d357ba6,
+    0 2px #81af4f,
+    0 -2px #4d357ba6;
+  animation: staticGlitch 0.3s ease-in-out;
+}
+
+@keyframes staticGlitch {
+  0%   { transform: scale(1.05) skewX(-2deg); }
+  50%  { transform: scale(1.04) skewX(2deg); }
+  100% { transform: scale(1.05) skewX(-2deg); }
+}
+.jean {
+  transition: transform 0.3s ease-in-out;
+  align-self: center;
+  transform: translateY(-10px); /* Lifts Jean upwards */
+}
+
+.jean:hover {
+  transform: scale(1.05) translateY(-15px); /* Slightly more on hover */
+}

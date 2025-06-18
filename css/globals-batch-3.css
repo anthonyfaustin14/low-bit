@@ -1,13 +1,9 @@
-/* Add this to your css/globals-batch-3.css if not already present */
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"); /* You already have this */
-@import url("https://fonts.googleapis.com/css?family=Silkscreen:400"); /* If you use Silkscreen anywhere */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Silkscreen:400");
 
-/* Define the 'Pixel Georgia' font */
 @font-face {
   font-family: 'Pixel Georgia';
-  /* Ensure 'pixel-georgia.ttf' is in the same directory as this globals file,
-     or adjust the path e.g., url('../fonts/pixel-georgia.ttf') */
-  src: url('pixel-georgia.ttf') format('truetype'); 
+  src: url('pixel-georgia.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,14 +19,12 @@ body {
   height: 100%;
 }
 
-/* Apply 'Pixel Georgia' as the default body font */
 body {
   font-family: 'Pixel Georgia', sans-serif;
-  font-weight: 400; 
-  font-style: normal; 
+  font-weight: 400;
+  font-style: normal;
 }
 
-/* Apply 'Pixel Georgia' as the default paragraph font */
 p {
   font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
@@ -41,8 +35,7 @@ a {
   text-decoration: none;
 }
 
-button:focus-visible { /* Keep your focus styles */
+button:focus-visible {
   outline: 2px solid #4a90e2 !important;
   outline: -webkit-focus-ring-color auto 5px !important;
 }
-/* End of additions/modifications for globals-batch-3.css */

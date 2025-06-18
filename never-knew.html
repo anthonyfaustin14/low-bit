@@ -10,6 +10,31 @@
       .text-wrapper-7 { /* For the next button */
         cursor: pointer;
       }
+      .text-wrapper-3 {
+    cursor: pointer;
+  }
+
+  /* === GHOST EFFECT FOR cisero-2 === */
+  .cisero-5 {
+    animation: floatUpDown 4s ease-in-out infinite,
+               glitchyPulse 2.5s ease-in-out infinite;
+    position: absolute;
+    z-index: 1001;
+  }
+
+  @keyframes floatUpDown {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+
+  @keyframes glitchyPulse {
+    0%   { filter: drop-shadow(2px 2px #81af4f) drop-shadow(-2px -2px #4d357ba6); }
+    25%  { filter: drop-shadow(-2px 1px #4d357ba6) drop-shadow(2px -1px #81af4f); }
+    50%  { filter: drop-shadow(2px -2px #81af4f) drop-shadow(-2px 2px #4d357ba6); }
+    75%  { filter: drop-shadow(-1px -2px #4d357ba6) drop-shadow(1px 2px #81af4f); }
+    100% { filter: none; }
+  }
     </style>
   </head>
   <body>
@@ -20,7 +45,7 @@
             No way!&nbsp;&nbsp;I’ve walked by that picture for years. I just never knew the story.
           </p>
 
-          <a href="dream-weaver-6.html">
+          <a href="ran-the-table.html">
             <div class="text-wrapper-7">&gt;</div>
           </a>
 

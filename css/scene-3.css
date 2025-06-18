@@ -1,9 +1,32 @@
+@font-face {
+  font-family: 'Pixel Georgia';
+  src: url('pixel-georgia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #fffbeb;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 .screen-9 {
   background-color: #fffbeb;
+  width: 100vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  overflow-x: hidden;
 }
 
 .screen-9 .scene-9 {
@@ -11,9 +34,9 @@
   width: 1440px;
   height: 1024px;
   position: relative;
+  background-repeat: repeat;
 }
 
-/* ... (other image styles remain unchanged) ... */
 .screen-9 .overlap-group-10 {
   position: absolute;
   width: 1263px;
@@ -153,8 +176,8 @@
   width: 52px;
   top: 14px;
   left: 1369px;
-  font-family: 'Pixel Georgia', sans-serif; /* UPDATED */
-  font-weight: 400; /* Use 'normal' or specific weight if font supports */
+  font-family: 'Pixel Georgia', sans-serif;
+  font-weight: 400;
   color: #58bf21;
   font-size: 48px;
   letter-spacing: 0;
@@ -191,7 +214,7 @@
   width: 519px;
   top: 29px;
   left: 63px;
-  font-family: 'Pixel Georgia', sans-serif; /* UPDATED */
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
   color: #493677;
   font-size: 24px;
@@ -204,7 +227,7 @@
   width: 49px;
   top: 138px;
   left: 1162px;
-  font-family: 'Pixel Georgia', sans-serif; /* UPDATED */
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
   color: #493677;
   font-size: 48px;
@@ -221,15 +244,25 @@
   left: 0;
 }
 
-.screen-9 .text-wrapper-31 { /* This is a <p> tag */
+.screen-9 .text-wrapper-31 {
   position: absolute;
   width: 1195px;
   top: 75px;
   left: 16px;
-  font-family: 'Pixel Georgia', sans-serif; /* UPDATED */
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
   color: #493677;
   font-size: 36px;
   letter-spacing: 0;
   line-height: normal;
+}
+@keyframes aceEnter {
+  0% { transform: translateX(-200px); opacity: 0; }
+  60% { transform: translateX(20px); opacity: 1; }
+  80% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
+
+.anthonyace-8 {
+  animation: aceEnter 1.0s ease-out forwards;
 }

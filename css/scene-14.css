@@ -1,19 +1,35 @@
-.screen-14 { /* UPDATED selector */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #fffbeb;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.screen-14 {
   background-color: #fffbeb;
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  overflow-x: hidden;
 }
 
-.screen-14 .scene-14 { /* UPDATED selector */
+.screen-14 .scene-14 {
   background-color: #fffbeb;
   width: 1440px;
   height: 1024px;
   position: relative;
 }
 
-.screen-14 .overlap-group-8 { /* UPDATED selector */
+.screen-14 .overlap-group-8 {
   position: absolute;
   width: 1263px;
   height: 806px;
@@ -21,7 +37,7 @@
   left: 88px;
 }
 
-.screen-14 .mlk-5 { /* UPDATED selector */
+.screen-14 .mlk-5 {
   position: absolute;
   width: 164px;
   height: 165px;
@@ -30,7 +46,7 @@
   object-fit: cover;
 }
 
-.screen-14 .frame-5 { /* UPDATED selector */
+.screen-14 .frame-5 {
   position: absolute;
   width: 217px;
   height: 216px;
@@ -39,7 +55,7 @@
   object-fit: cover;
 }
 
-.screen-14 .rec-room-sign-5 { /* UPDATED selector */
+.screen-14 .rec-room-sign-5 {
   position: absolute;
   width: 660px;
   height: 110px;
@@ -48,7 +64,7 @@
   object-fit: cover;
 }
 
-.screen-14 .pool-table-5 { /* UPDATED selector */
+.screen-14 .pool-table-5 {
   position: absolute;
   width: 236px;
   height: 235px;
@@ -57,7 +73,7 @@
   object-fit: cover;
 }
 
-.screen-14 .cisero-article-9 { /* UPDATED selector */
+.screen-14 .cisero-article-9 {
   position: absolute;
   width: 162px;
   height: 219px;
@@ -66,7 +82,7 @@
   object-fit: cover;
 }
 
-.screen-14 .willie-munson-5 { /* UPDATED selector */
+.screen-14 .willie-munson-5 {
   position: absolute;
   width: 216px;
   height: 216px;
@@ -75,7 +91,7 @@
   object-fit: cover;
 }
 
-.screen-14 .water-tank-9 { /* UPDATED selector */
+.screen-14 .water-tank-9 {
   position: absolute;
   width: 78px;
   height: 221px;
@@ -84,7 +100,7 @@
   object-fit: cover;
 }
 
-.screen-14 .vending-machine-5 { /* UPDATED selector */
+.screen-14 .vending-machine-5 {
   position: absolute;
   width: 108px;
   height: 225px;
@@ -93,7 +109,7 @@
   object-fit: cover;
 }
 
-.screen-14 .front-door-9 { /* UPDATED selector */
+.screen-14 .front-door-9 {
   position: absolute;
   width: 122px;
   height: 238px;
@@ -102,7 +118,7 @@
   object-fit: cover;
 }
 
-.screen-14 .frame-game-5 { /* UPDATED selector */
+.screen-14 .frame-game-5 {
   position: absolute;
   width: 1263px;
   height: 806px;
@@ -111,7 +127,7 @@
   object-fit: cover;
 }
 
-.screen-14 .rico-5 { /* UPDATED selector */
+.screen-14 .rico-5 {
   position: absolute;
   width: 95px;
   height: 156px;
@@ -120,7 +136,7 @@
   object-fit: cover;
 }
 
-.screen-14 .stick-5 { /* UPDATED selector */
+.screen-14 .stick-5 {
   position: absolute;
   width: 19px;
   height: 180px;
@@ -129,7 +145,7 @@
   object-fit: cover;
 }
 
-.screen-14 .jean-5 { /* UPDATED selector */
+.screen-14 .jean-5 {
   position: absolute;
   width: 119px;
   height: 183px;
@@ -138,7 +154,7 @@
   object-fit: cover;
 }
 
-.screen-14 .anthonyace-10 { /* UPDATED selector */
+.screen-14 .anthonyace-10 {
   position: absolute;
   width: 109px;
   height: 188px;
@@ -147,14 +163,14 @@
   object-fit: cover;
 }
 
-.screen-14 .text-wrapper-24 { /* Scene indicator "II" */
+.screen-14 .text-wrapper-24 {
   position: absolute;
   width: 52px;
   top: 14px;
   left: 1369px;
-  font-family: "Silkscreen", Helvetica, sans-serif; /* Keeping Silkscreen */
+  font-family: "Silkscreen", Helvetica, sans-serif;
   font-weight: 400;
-  font-style: normal; /* Ensuring consistency */
+  font-style: normal;
   color: #58bf21;
   font-size: 48px;
   letter-spacing: 0;
@@ -162,7 +178,7 @@
   white-space: nowrap;
 }
 
-.screen-14 .overlap-6 { /* UPDATED selector */
+.screen-14 .overlap-6 {
   position: absolute;
   width: 1228px;
   height: 194px;
@@ -170,39 +186,39 @@
   left: 106px;
   background-color: #fffbeb;
   border: 4px solid;
-  border-color: #58bf21; /* Note: border color */
+  border-color: #58bf21;
 }
 
-.screen-14 .overlap-7 { /* UPDATED selector */
+.screen-14 .overlap-7 {
   position: absolute;
   width: 1195px;
   height: 168px;
-  top: 25px; /* Relative to .overlap-6 */
-  left: 16px; /* Relative to .overlap-6 */
+  top: 25px;
+  left: 16px;
 }
 
-.screen-14 .sometimes-it-almost { /* Dialogue paragraph */
+.screen-14 .sometimes-it-almost {
   position: absolute;
   width: 1195px;
-  top: 39px; /* Relative to .overlap-7 */
+  top: 39px;
   left: 0;
-  font-family: 'Pixel Georgia', sans-serif; /* UPDATED */
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
-  font-style: normal; /* ADDED for consistency */
+  font-style: normal;
   color: #81af45;
   font-size: 36px;
   letter-spacing: 0;
   line-height: normal;
 }
 
-.screen-14 .text-wrapper-25 { /* Next button ">" */
+.screen-14 .text-wrapper-25 {
   position: absolute;
   width: 49px;
-  top: 113px; /* Relative to .overlap-7 */
+  top: 113px;
   left: 1146px;
-  font-family: 'Pixel Georgia', sans-serif; /* UPDATED */
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
-  font-style: normal; /* ADDED for consistency */
+  font-style: normal;
   color: #81af45;
   font-size: 48px;
   letter-spacing: 0;
@@ -210,24 +226,24 @@
   white-space: nowrap;
 }
 
-.screen-14 .text-wrapper-26 { /* Speaker name */
+.screen-14 .text-wrapper-26 {
   position: absolute;
   width: 519px;
-  top: 0; /* Relative to .overlap-7 */
+  top: 0;
   left: 49px;
-  font-family: 'Pixel Georgia', sans-serif; /* UPDATED */
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
-  font-style: normal; /* ADDED for consistency */
+  font-style: normal;
   color: #81af45;
   font-size: 24px;
   letter-spacing: 0;
   line-height: normal;
 }
 
-.screen-14 .jean-icon-2 { /* UPDATED selector */
+.screen-14 .jean-icon-2 {
   position: absolute;
   width: 34px;
   height: 41px;
-  top: 9px; /* Relative to .overlap-6 (since it's a direct child) */
-  left: 12px; /* Relative to .overlap-6 */
+  top: 9px;
+  left: 12px;
 }

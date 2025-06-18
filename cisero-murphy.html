@@ -7,6 +7,31 @@
     <link rel="stylesheet" href="css/styleguide-batch-3.css" />
     <link rel="stylesheet" href="css/dream-weaver-6.css" />
     <style>
+       .text-wrapper-3 {
+    cursor: pointer;
+  }
+
+  /* === GHOST EFFECT FOR cisero-2 === */
+  .cisero-6 {
+    animation: floatUpDown 4s ease-in-out infinite,
+               glitchyPulse 2.5s ease-in-out infinite;
+    position: absolute;
+    z-index: 1001;
+  }
+
+  @keyframes floatUpDown {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+
+  @keyframes glitchyPulse {
+    0%   { filter: drop-shadow(2px 2px #81af4f) drop-shadow(-2px -2px #4d357ba6); }
+    25%  { filter: drop-shadow(-2px 1px #4d357ba6) drop-shadow(2px -1px #81af4f); }
+    50%  { filter: drop-shadow(2px -2px #81af4f) drop-shadow(-2px 2px #4d357ba6); }
+    75%  { filter: drop-shadow(-1px -2px #4d357ba6) drop-shadow(1px 2px #81af4f); }
+    100% { filter: none; }
+  }
       .text-wrapper-9 { /* For the next button */
         cursor: pointer;
       }
@@ -47,11 +72,10 @@
           <img class="texture-5" src="img/texture-9.png" />
           <img class="dithered-image-5" src="img/dithered-image-22-1-9.png" />
           <p class="i-learned-this-game">
-            I learned this game right here in the Rec Room.  Kept practicing till I turned pro. In 1965 I
-            became the first Black world champion in pocket billiards—straight‑pool, 150 points, ran the table.
+           You see that photo next to the one of Dr. King. Thats me, Cisero Murphy.
           </p>
 
-          <a href="dream-weaver-7.html"><div class="text-wrapper-9">&gt;</div></a>
+          <a href="never-knew.html"><div class="text-wrapper-9">&gt;</div></a>
 
           <div class="text-wrapper-10">Ghost of Cisero Murphy:</div>
           <img class="dither-background-5" src="img/dither-background-9.png" />

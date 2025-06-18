@@ -8,6 +8,55 @@
     <link rel="stylesheet" href="css/styleguide-batch-3.css" />
     <link rel="stylesheet" href="css/dream-weaver-8.css" />
     <style>
+       .text-wrapper-15 {
+    cursor: pointer;
+  }
+
+  .next-arrow {
+    position: absolute;
+    top: 957px;  
+    left: 1263px;
+    width: 49px;  
+    height: 48px; 
+    font-family: 'Pixel Georgia', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px; 
+    color: #969696; 
+    text-decoration: none;
+    z-index: 999;
+    cursor: pointer;
+    white-space: nowrap; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .next-arrow:hover {
+    opacity: 0.7;
+  }
+
+  /* === FLOATING GLITCH GHOST EFFECT === */
+  .cisero-11 {
+    animation: floatUpDown 4s ease-in-out infinite,
+               glitchyPulse 2.5s ease-in-out infinite;
+    position: absolute;
+    z-index: 1001;
+  }
+
+  @keyframes floatUpDown {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+
+  @keyframes glitchyPulse {
+    0%   { filter: drop-shadow(2px 2px #81af4f) drop-shadow(-2px -2px #4d357ba6); }
+    25%  { filter: drop-shadow(-2px 1px #4d357ba6) drop-shadow(2px -1px #81af4f); }
+    50%  { filter: drop-shadow(2px -2px #81af4f) drop-shadow(-2px 2px #4d357ba6); }
+    75%  { filter: drop-shadow(-1px -2px #4d357ba6) drop-shadow(1px 2px #81af4f); }
+    100% { filter: none; }
+  }
       .text-wrapper-15 { /* For the next button */
         cursor: pointer;
       }
@@ -50,7 +99,7 @@
             everyone, and broke the barrier for good.
           </p>
 
-          <a href="dream-weaver-9.html"><div class="text-wrapper-15">&gt;</div></a>
+          <a href="what-kept-you-going.html"><div class="text-wrapper-15">&gt;</div></a>
 
           <div class="text-wrapper-16">Ghost of Cisero Murphy:</div>
           <img class="dither-background-8" src="img/dither-background-9.png" />

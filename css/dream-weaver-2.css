@@ -7,7 +7,7 @@
 }
 
 .screen-9 .dream-10 {
-  background-color: #ffffff; /* Or #fffbeb if that's your typical canvas */
+  background-color: #ffffff; 
   width: 1440px;
   height: 1024px;
 }
@@ -44,7 +44,7 @@
   left: 117px; /* Position over .dithered-image-10 */
   font-family: 'Pixel Georgia', sans-serif; /* UPDATED */
   font-weight: 400;
-  font-style: normal; /* ADDED for consistency */
+  font-style: normal; 
   color: #969696;
   font-size: 32px;
   letter-spacing: 0;
@@ -58,23 +58,22 @@
   left: 1263px; /* Position over .dithered-image-10 */
   font-family: 'Pixel Georgia', sans-serif; /* UPDATED */
   font-weight: 400;
-  font-style: normal; /* ADDED for consistency */
-  color: #7928d7;
+  font-style: normal; 
+  color:  #969696;
   font-size: 48px;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
-  /* cursor: pointer; is handled by inline style in HTML */
 }
 
 .screen-9 .text-wrapper-22 { /* Speaker name: "Ghost of Cisero Murphy:" */
   position: absolute;
   width: 519px;
-  top: 844px; /* Position over .dithered-image-10 */
-  left: 166px; /* Position over .dithered-image-10 */
-  font-family: 'Pixel Georgia', sans-serif; /* UPDATED */
+  top: 844px; 
+  left: 166px; 
+  font-family: 'Pixel Georgia', sans-serif; 
   font-weight: 400;
-  font-style: normal; /* ADDED for consistency */
+  font-style: normal; 
   color: #969696;
   font-size: 24px;
   letter-spacing: 0;
@@ -135,7 +134,7 @@
   object-fit: cover;
 }
 
-.screen-9 .anthonyace-14 { /* This is the full body Ace image */
+.screen-9 .anthonyace-14 { /* full body Ace image */
   position: absolute;
   width: 109px;
   height: 189px;

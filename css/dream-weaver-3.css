@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-.dream-screen .dream-2 { /* Or .dream-scene-3 if you updated HTML class names */
+.dream-screen .dream-2 {
   background-color: #ffffff; 
   width: 1440px;
   height: 1024px;
@@ -28,7 +28,7 @@
   object-fit: cover;
 }
 
-.dream-screen .dithered-image-2 { /* Dialogue box background image */
+.dream-screen .dithered-image-2 { 
   position: absolute;
   width: 1227px;
   height: 196px;
@@ -51,7 +51,7 @@
   line-height: normal;
 }
 
-.dream-screen .text-wrapper-3 { /* Next button: ">" */
+.dream-screen .text-wrapper-3 {
   position: absolute;
   width: 49px;
   top: 957px; 
@@ -66,7 +66,7 @@
   white-space: nowrap;
 }
 
-.dream-screen .text-wrapper-4 { /* Speaker name: "Anthony “Ace”:" */
+.dream-screen .text-wrapper-4 { 
   position: absolute;
   width: 519px;
   top: 844px; 
@@ -80,11 +80,11 @@
   line-height: normal;
 }
 
-.dream-screen .anthonyace-2 { /* This is the icon next to dialogue */
+.dream-screen .anthonyace-2 { 
   position: absolute;
   width: 40px;
   height: 50px;
-  top: 818px; /* UPDATED from 823px (moved up 5px to align with dialogue background top) */
+  top: 818px; 
   left: 114px; 
 }
 

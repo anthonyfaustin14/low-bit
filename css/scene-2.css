@@ -1,9 +1,32 @@
+@font-face {
+  font-family: 'Pixel Georgia';
+  src: url('pixel-georgia.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #fffbeb;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 .scene-screen {
   background-color: #fffbeb;
+  width: 100vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  overflow-x: hidden;
 }
 
 .scene-screen .scene-2 {

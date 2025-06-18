@@ -1,4 +1,4 @@
-.dream-screen { /* UPDATED selector */
+.dream-screen {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -6,11 +6,10 @@
   width: 100%;
 }
 
-.dream-screen .dream-scene-7 { /* UPDATED selector */
-  background-color: #ffffff; /* Or #fffbeb if that's your typical canvas */
+.dream-screen .dream-scene-7 {
+  background-color: #ffffff;
   width: 1440px;
   height: 1024px;
-  /* position: relative; /* Added, if child elements like overlap-group-7 are absolutely positioned to this */
 }
 
 .dream-screen .overlap-group-7 {
@@ -29,7 +28,7 @@
   object-fit: cover;
 }
 
-.dream-screen .dithered-image-7 { /* Dialogue box background image */
+.dream-screen .dithered-image-7 {
   position: absolute;
   width: 1227px;
   height: 196px;
@@ -38,56 +37,55 @@
   object-fit: cover;
 }
 
-.dream-screen .that-s-legendary { /* Dialogue text */
+.dream-screen .that-s-legendary {
   position: absolute;
   width: 1195px;
-  top: 883px; /* Position over .dithered-image-7 */
-  left: 117px; /* Position over .dithered-image-7 */
-  font-family: 'Pixel Georgia', sans-serif; /* UPDATED */
+  top: 883px;
+  left: 117px;
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
-  font-style: normal; /* ADDED for consistency */
+  font-style: normal;
   color: #7928d7;
   font-size: 32px;
   letter-spacing: 0;
   line-height: normal;
 }
 
-.dream-screen .text-wrapper-13 { /* Next button: ">" */
+.dream-screen .text-wrapper-13 {
   position: absolute;
   width: 49px;
-  top: 957px; /* Position over .dithered-image-7 */
-  left: 1263px; /* Position over .dithered-image-7 */
-  font-family: 'Pixel Georgia', sans-serif; /* UPDATED */
+  top: 957px;
+  left: 1263px;
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
-  font-style: normal; /* ADDED for consistency */
+  font-style: normal;
   color: #7928d7;
   font-size: 48px;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
-  /* cursor: pointer; is handled by inline style in HTML */
 }
 
-.dream-screen .text-wrapper-14 { /* Speaker name: "Anthony “Ace”:" */
+.dream-screen .text-wrapper-14 {
   position: absolute;
   width: 519px;
-  top: 844px; /* Position over .dithered-image-7 */
-  left: 166px; /* Position over .dithered-image-7 */
-  font-family: 'Pixel Georgia', sans-serif; /* UPDATED */
+  top: 844px;
+  left: 166px;
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
-  font-style: normal; /* ADDED for consistency */
+  font-style: normal;
   color: #7928d7;
   font-size: 24px;
   letter-spacing: 0;
   line-height: normal;
 }
 
-.dream-screen .anthonyace-9 { /* This is the icon next to dialogue */
+.dream-screen .anthonyace-9 {
   position: absolute;
   width: 40px;
   height: 50px;
-  top: 823px; /* Position near speaker name, over .dithered-image-7 */
-  left: 114px; /* Position near speaker name, over .dithered-image-7 */
+  top: 823px;
+  left: 114px;
 }
 
 .dream-screen .dither-background-7 {
@@ -135,7 +133,7 @@
   object-fit: cover;
 }
 
-.dream-screen .anthonyace-10 { /* This is the full body Ace image */
+.dream-screen .anthonyace-10 {
   position: absolute;
   width: 109px;
   height: 189px;
@@ -144,7 +142,7 @@
   object-fit: cover;
 }
 
-.dream-screen .cisero-10 { /* This is the full body Cisero image */
+.dream-screen .cisero-10 {
   position: absolute;
   width: 119px;
   height: 184px;

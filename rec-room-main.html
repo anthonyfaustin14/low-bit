@@ -13,38 +13,37 @@
         opacity: 0;
         transition: opacity 1.5s ease-in-out;
       }
-    
+
       body.fade-in {
         opacity: 1;
       }
-    
+
       body.fade-out {
         opacity: 0;
       }
     </style>
-    
+
     <script>
       // Fade in on page load
       window.addEventListener("DOMContentLoaded", () => {
         document.body.classList.add("fade-in");
-    
+
         // Start fade-out after delay, then go to next scene
         setTimeout(() => {
           document.body.classList.remove("fade-in");
           document.body.classList.add("fade-out");
-    
+
           setTimeout(() => {
-            window.location.href = "scene-3.html";
-          }, 1500); // matches the fade-out duration
-        }, 2000); // delay before starting fade-out
+            window.location.href = "ace-arrives.html";
+          }, 1500); 
+        }, 2000);
       });
     </script>
-    
   </head>
   <body>
     <div class="scene-screen" data-model-id="23:56">
-      <a href="scene-3.html"
-        ><div class="scene-2">
+      <a href="ace-arrives.html">
+        <div class="scene-2">
           <div class="overlap-group-3">
             <img class="mlk-2" src="img/mlk-6.png" />
             <img class="frame-2" src="img/frame-8.png" />
@@ -61,9 +60,10 @@
             <img class="stick-2" src="img/stick-8.png" />
             <img class="jean-3" src="img/jean-9.png" />
           </div>
-          
-          <div class="rectangle"></div></div
-      ></a>
+
+          <div class="rectangle"></div>
+        </div>
+      </a>
     </div>
   </body>
 </html>

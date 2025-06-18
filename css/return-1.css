@@ -1,9 +1,25 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #fffbeb;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 .return {
   background-color: #fffbeb;
+  width: 100vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  overflow-x: hidden;
 }
 
 .return .div-3 {
@@ -147,14 +163,14 @@
   object-fit: cover;
 }
 
-.return .text-wrapper-5 { /* Scene Indicator "II" */
+.return .text-wrapper-5 {
   position: absolute;
   width: 52px;
   top: 14px;
   left: 1369px;
-  font-family: "Silkscreen", Helvetica, sans-serif; /* Keeping Silkscreen */
+  font-family: "Silkscreen", Helvetica, sans-serif;
   font-weight: 400;
-  font-style: normal; /* Ensuring consistency */
+  font-style: normal;
   color: #58bf21;
   font-size: 48px;
   letter-spacing: 0;
@@ -162,7 +178,7 @@
   white-space: nowrap;
 }
 
-.return .overlap { /* Dialogue box container */
+.return .overlap {
   position: absolute;
   width: 1228px;
   height: 194px;
@@ -173,36 +189,36 @@
   border-color: #7d7def;
 }
 
-.return .overlap-2 { /* Inner container for dialogue text and next button */
+.return .overlap-2 {
   position: absolute;
   width: 1195px;
   height: 118px;
-  top: 73px;     /* Relative to .overlap */
-  left: 16px;    /* Relative to .overlap */
+  top: 73px;
+  left: 16px;
 }
 
-.return .text-wrapper-6 { /* Dialogue: "You alright there Ace?..." */
+.return .text-wrapper-6 {
   position: absolute;
   width: 1195px;
-  top: 0;        /* Relative to .overlap-2 */
-  left: 0;       /* Relative to .overlap-2 */
-  font-family: 'Pixel Georgia', sans-serif; /* UPDATED */
+  top: 0;
+  left: 0;
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
-  font-style: normal; /* ADDED for consistency */
+  font-style: normal;
   color: #7d7def;
   font-size: 36px;
   letter-spacing: 0;
   line-height: normal;
 }
 
-.return .text-wrapper-7 { /* Next button: ">" */
+.return .text-wrapper-7 {
   position: absolute;
   width: 49px;
-  top: 65px;     /* Relative to .overlap-2 */
-  left: 1146px;   /* Relative to .overlap-2 */
-  font-family: 'Pixel Georgia', sans-serif; /* UPDATED */
+  top: 65px;
+  left: 1146px;
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
-  font-style: normal; /* ADDED for consistency */
+  font-style: normal;
   color: #7d7def;
   font-size: 48px;
   letter-spacing: 0;
@@ -210,30 +226,30 @@
   white-space: nowrap;
 }
 
-.return .overlap-3 { /* Inner container for icon and speaker name */
+.return .overlap-3 {
   position: absolute;
   width: 574px;
   height: 58px;
-  top: 11px;     /* Relative to .overlap */
-  left: 16px;    /* Relative to .overlap */
+  top: 11px;
+  left: 16px;
 }
 
 .return .rico-icon {
   position: absolute;
   width: 57px;
   height: 41px;
-  top: 0;        /* Relative to .overlap-3 */
-  left: 0;       /* Relative to .overlap-3 */
+  top: 0;
+  left: 0;
 }
 
-.return .text-wrapper-8 { /* Speaker name: "Rico “Ricochet”:" */
+.return .text-wrapper-8 {
   position: absolute;
   width: 519px;
-  top: 12px;     /* Relative to .overlap-3 */
-  left: 55px;    /* Relative to .overlap-3 */
-  font-family: 'Pixel Georgia', sans-serif; /* UPDATED */
+  top: 12px;
+  left: 55px;
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
-  font-style: normal; /* ADDED for consistency */
+  font-style: normal;
   color: #7d7def;
   font-size: 24px;
   letter-spacing: 0;

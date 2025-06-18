@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>The Rec Room NYC</title>
+    <link rel="stylesheet" href="css/globals-batch-2.css" />
+    <link rel="stylesheet" href="css/styleguide-batch-2.css" />
+    <link rel="stylesheet" href="css/scene-15.css" />
+  </head>
+  <body>
+    <div class="scene-screen" data-model-id="58:649">
+      <div class="scene-2">
+        <div class="overlap-3">
+          <a href="where-am-i.html" id="mlkLink" class="mlk-link-wrapper">
+            <div class="mlk-container">
+              <img class="frame-image" src="img/frame-5.png" alt="Frame Around MLK" />
+              <img class="mlk-image mlk-normal" src="img/mlk-5.png" alt="MLK Portrait" />
+            </div>
+          </a>
+
+          <img class="rec-room-sign-2" src="img/rec-room-sign-5.png" />
+          <img class="pool-table-2" src="img/pool-table-5.png" />
+          <img class="cisero-article-6" src="img/cisero-article-9.png" />
+          <img class="willie-munson-2" src="img/willie-munson-5.png" />
+          <img class="water-tank-6" src="img/water-tank-9.png" />
+          <img class="vending-machine-2" src="img/vending-machine-5.png" />
+          <img class="front-door-6" src="img/front-door-9.png" />
+          <img class="frame-game-2" src="img/frame-game-5.png" />
+          <img class="rico-2" src="img/rico-5.png" />
+          <img class="stick-2" src="img/stick-5.png" />
+          <img class="jean-2" src="img/jean-5.png" />
+          <img class="anthonyace-7" src="img/anthonyace-11.png" />
+        </div>
+
+        <div class="CLICK-THE-PHOTO-TO-wrapper">
+          <p class="CLICK-THE-PHOTO-TO">&gt;&nbsp;&nbsp; [ CLICK THE PHOTO TO LEARN HISTORY ]&nbsp;&nbsp; &lt;</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="glitchOverlay">
+      <img src="img/glitch.gif" alt="Glitch Effect" />
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const mlkLink = document.getElementById('mlkLink');
+        const glitchOverlay = document.getElementById('glitchOverlay');
+        const destinationUrl = mlkLink.getAttribute('href');
+
+        mlkLink.addEventListener('click', function (event) {
+          event.preventDefault();
+          glitchOverlay.style.display = 'block';
+
+          setTimeout(function () {
+            glitchOverlay.style.display = 'none';
+            window.location.href = destinationUrl;
+          }, 2000);
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,13 +1,31 @@
+/* ==== Recommended HTML & Body Reset ==== */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* ==== Updated Styles ==== */
 .dream {
-  background-color: #ffffff;
+  background-color: #ffffff; 
+  width: 100vw;             
+  min-height: 100vh;          
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  width: 100%;
+  justify-content: center;    
+  align-items: center;       
+  overflow-x: hidden;        
 }
 
 .dream .overlap-group-wrapper {
-  background-color: #ffffff; 
+  background-color: #ffffff;
   width: 1440px;
   height: 1024px;
 }
@@ -28,7 +46,7 @@
   object-fit: cover;
 }
 
-.dream .dithered-image { 
+.dream .dithered-image {
   position: absolute;
   width: 1227px;
   height: 196px;
@@ -37,7 +55,7 @@
   object-fit: cover;
 }
 
-.dream .anthonyace { 
+.dream .anthonyace {
   position: absolute;
   width: 40px;
   height: 50px;
@@ -99,7 +117,7 @@
   object-fit: cover;
 }
 
-.dream .img { /* Refers to "Anthony Ace full body" image in HTML */
+.dream .img { /* Anthony Ace full body image in HTML */
   position: absolute;
   width: 109px;
   height: 189px;
@@ -135,28 +153,26 @@
   object-fit: cover;
 }
 
-
-
 .dream .character-name {
   position: absolute;
   width: 519px;
-  top: 844px; 
+  top: 844px;
   left: 166px;
-  font-family: 'Pixel Georgia', sans-serif; 
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
-  font-style: normal; 
+  font-style: normal;
   color: #7928d7;
   font-size: 24px;
   letter-spacing: 0;
   line-height: normal;
 }
 
-.dream .next-button { 
+.dream .next-button {
   position: absolute;
   width: 49px;
-  top: 957px; 
-  left: 1263px; 
-  font-family: 'Pixel Georgia', sans-serif; 
+  top: 957px;
+  left: 1263px;
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #7928d7;
@@ -168,12 +184,12 @@
   cursor: pointer;
 }
 
-.dream .character-dialogue { 
+.dream .character-dialogue {
   position: absolute;
   width: 1195px;
   top: 883px;
-  left: 117px; 
-  font-family: 'Pixel Georgia', sans-serif; 
+  left: 117px;
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #7928d7;
@@ -203,7 +219,30 @@
   }
 
   .dream .next-button {
-    left: auto; /* Adjust for smaller screens, perhaps */
+    left: auto;
     right: 5%;
   }
+}
+
+.cisero {
+  animation: floatUpDown 4s ease-in-out infinite,
+             glitchyPulse 2.5s ease-in-out infinite;
+  position: absolute; /* or relative if needed */
+  z-index: 1001;
+}
+
+/* Floating animation */
+@keyframes floatUpDown {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* Glitch animation */
+@keyframes glitchyPulse {
+  0%   { filter: drop-shadow(2px 2px #81af4f) drop-shadow(-2px -2px #4d357ba6); }
+  25%  { filter: drop-shadow(-2px 1px #4d357ba6) drop-shadow(2px -1px #81af4f); }
+  50%  { filter: drop-shadow(2px -2px #81af4f) drop-shadow(-2px 2px #4d357ba6); }
+  75%  { filter: drop-shadow(-1px -2px #4d357ba6) drop-shadow(1px 2px #81af4f); }
+  100% { filter: none; }
 }

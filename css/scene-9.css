@@ -1,19 +1,35 @@
-.screen-9 { /* UPDATED selector */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
   background-color: #fffbeb;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.screen-9 {
+  background-color: #fffbeb;
+  width: 100vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  overflow-x: hidden;
 }
 
-.screen-9 .scene-9 { /* UPDATED selector */
+.screen-9 .scene-9 {
   background-color: #fffbeb;
   width: 1440px;
   height: 1024px;
   position: relative;
 }
 
-.screen-9 .overlap-group-9 { /* UPDATED selector */
+.screen-9 .overlap-group-9 {
   position: absolute;
   width: 1263px;
   height: 806px;
@@ -21,7 +37,7 @@
   left: 88px;
 }
 
-.screen-9 .dithered-image { /* UPDATED selector */
+.screen-9 .dithered-image {
   position: absolute;
   width: 165px;
   height: 165px;
@@ -30,7 +46,7 @@
   object-fit: cover;
 }
 
-.screen-9 .frame-8 { /* UPDATED selector */
+.screen-9 .frame-8 {
   position: absolute;
   width: 217px;
   height: 216px;
@@ -39,7 +55,7 @@
   object-fit: cover;
 }
 
-.screen-9 .rec-room-sign-8 { /* UPDATED selector */
+.screen-9 .rec-room-sign-8 {
   position: absolute;
   width: 660px;
   height: 110px;
@@ -48,7 +64,7 @@
   object-fit: cover;
 }
 
-.screen-9 .pool-table-8 { /* UPDATED selector */
+.screen-9 .pool-table-8 {
   position: absolute;
   width: 236px;
   height: 235px;
@@ -57,7 +73,7 @@
   object-fit: cover;
 }
 
-.screen-9 .cisero-article-8 { /* UPDATED selector */
+.screen-9 .cisero-article-8 {
   position: absolute;
   width: 162px;
   height: 219px;
@@ -66,7 +82,7 @@
   object-fit: cover;
 }
 
-.screen-9 .willie-munson-8 { /* UPDATED selector */
+.screen-9 .willie-munson-8 {
   position: absolute;
   width: 216px;
   height: 216px;
@@ -75,7 +91,7 @@
   object-fit: cover;
 }
 
-.screen-9 .water-tank-8 { /* UPDATED selector */
+.screen-9 .water-tank-8 {
   position: absolute;
   width: 78px;
   height: 221px;
@@ -84,7 +100,7 @@
   object-fit: cover;
 }
 
-.screen-9 .vending-machine-8 { /* UPDATED selector */
+.screen-9 .vending-machine-8 {
   position: absolute;
   width: 108px;
   height: 225px;
@@ -93,7 +109,7 @@
   object-fit: cover;
 }
 
-.screen-9 .front-door-8 { /* UPDATED selector */
+.screen-9 .front-door-8 {
   position: absolute;
   width: 122px;
   height: 238px;
@@ -102,7 +118,7 @@
   object-fit: cover;
 }
 
-.screen-9 .frame-game-8 { /* UPDATED selector */
+.screen-9 .frame-game-8 {
   position: absolute;
   width: 1263px;
   height: 806px;
@@ -111,7 +127,7 @@
   object-fit: cover;
 }
 
-.screen-9 .rico-8 { /* UPDATED selector */
+.screen-9 .rico-8 {
   position: absolute;
   width: 95px;
   height: 156px;
@@ -120,7 +136,7 @@
   object-fit: cover;
 }
 
-.screen-9 .stick-8 { /* UPDATED selector */
+.screen-9 .stick-8 {
   position: absolute;
   width: 19px;
   height: 180px;
@@ -129,7 +145,7 @@
   object-fit: cover;
 }
 
-.screen-9 .jean-9 { /* UPDATED selector */
+.screen-9 .jean-9 {
   position: absolute;
   width: 119px;
   height: 183px;
@@ -138,7 +154,7 @@
   object-fit: cover;
 }
 
-.screen-9 .anthonyace-7 { /* UPDATED selector */
+.screen-9 .anthonyace-7 {
   position: absolute;
   width: 109px;
   height: 188px;
@@ -147,14 +163,14 @@
   object-fit: cover;
 }
 
-.screen-9 .text-wrapper-24 { /* UPDATED selector */
+.screen-9 .text-wrapper-24 {
   position: absolute;
   width: 52px;
   top: 14px;
   left: 1369px;
-  font-family: 'Pixel Georgia', sans-serif; /* UPDATED font */
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
-  font-style: normal; /* ADDED for consistency */
+  font-style: normal;
   color: #58bf21;
   font-size: 48px;
   letter-spacing: 0;
@@ -162,7 +178,7 @@
   white-space: nowrap;
 }
 
-.screen-9 .overlap-9 { /* UPDATED selector */
+.screen-9 .overlap-9 {
   position: absolute;
   width: 1228px;
   height: 194px;
@@ -173,7 +189,7 @@
   border-color: #493677;
 }
 
-.screen-9 .ace-icon-3 { /* UPDATED selector */
+.screen-9 .ace-icon-3 {
   position: absolute;
   width: 36px;
   height: 48px;
@@ -181,42 +197,42 @@
   left: 12px;
 }
 
-.screen-9 .text-wrapper-25 { /* UPDATED selector */
+.screen-9 .text-wrapper-25 {
   position: absolute;
   width: 519px;
   top: 25px;
   left: 59px;
-  font-family: 'Pixel Georgia', sans-serif; /* UPDATED font */
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
-  font-style: normal; /* ADDED for consistency */
+  font-style: normal;
   color: #493677;
   font-size: 24px;
   letter-spacing: 0;
   line-height: normal;
 }
 
-.screen-9 .text-wrapper-26 { /* UPDATED selector, styles <p class="text-wrapper-26"> */
+.screen-9 .text-wrapper-26 {
   position: absolute;
   width: 1195px;
   top: 71px;
   left: 15px;
-  font-family: 'Pixel Georgia', sans-serif; /* UPDATED font */
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
-  font-style: normal; /* ADDED for consistency */
+  font-style: normal;
   color: #493677;
   font-size: 36px;
   letter-spacing: 0;
   line-height: normal;
 }
 
-.screen-9 .text-wrapper-27 { /* UPDATED selector */
+.screen-9 .text-wrapper-27 {
   position: absolute;
   width: 49px;
   top: 134px;
   left: 1158px;
-  font-family: 'Pixel Georgia', sans-serif; /* UPDATED font */
+  font-family: 'Pixel Georgia', sans-serif;
   font-weight: 400;
-  font-style: normal; /* ADDED for consistency */
+  font-style: normal;
   color: #493677;
   font-size: 48px;
   letter-spacing: 0;
